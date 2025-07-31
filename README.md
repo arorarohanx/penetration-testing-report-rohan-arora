@@ -33,5 +33,5 @@ This project simulates a **real-world black-box penetration test** on two virtua
 
 ---
 
-## 📂 Repository Structure
+
 

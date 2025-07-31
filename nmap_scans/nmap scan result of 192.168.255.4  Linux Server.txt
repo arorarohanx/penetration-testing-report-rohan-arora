@@ -1,0 +1,46 @@
+Nmap scan report for 192.168.225.4
+Host is up (0.0029s latency).
+Not shown: 979 filtered tcp ports (no-response), 17 filtered tcp ports (host-prohibited)
+PORT    STATE SERVICE     VERSION
+22/tcp  open  ssh         OpenSSH 6.6.1 (protocol 2.0)
+| ssh-hostkey: 
+|   2048 cc:35:af:cc:62:38:6a:02:3a:67:60:59:c3:6d:61:d0 (RSA)
+|   256 c8:d5:ac:69:f6:55:51:bd:bb:65:25:c1:c9:be:d8:92 (ECDSA)
+|_  256 37:2c:db:1b:f1:f3:b2:1d:06:96:64:61:48:ab:31:d8 (ED25519)
+80/tcp  open  http        Apache httpd 2.4.6 ((CentOS) PHP/5.4.16)
+|_http-title: Site doesn't have a title (text/html; charset=UTF-8).
+|_http-server-header: Apache/2.4.6 (CentOS) PHP/5.4.16
+| http-methods: 
+|_  Potentially risky methods: TRACE
+139/tcp open  netbios-ssn Samba smbd 3.X - 4.X (workgroup: WORKGROUP)
+445/tcp open  netbios-ssn Samba smbd 4.8.3 (workgroup: WORKGROUP)
+MAC Address: 08:00:27:91:BD:36 (PCS Systemtechnik/Oracle VirtualBox virtual NIC)
+Warning: OSScan results may be unreliable because we could not find at least 1 open and 1 closed port
+Aggressive OS guesses: Linux 3.10 - 4.11 (97%), Linux 3.2 - 4.14 (97%), Linux 5.1 - 5.15 (97%), Linux 3.13 - 3.16 (91%), Linux 3.13 - 4.4 (91%), Linux 3.16 - 4.6 (91%), Linux 3.8 - 3.16 (91%), Linux 4.10 (91%), Linux 4.4 (91%), OpenWrt 19.07 (Linux 4.14) (91%)
+No exact OS matches for host (test conditions non-ideal).
+Network Distance: 1 hop
+Service Info: Host: CENTOS
+
+Host script results:
+|_clock-skew: mean: 2h21m03s, deviation: 4h02m29s, median: 1m03s
+| smb-security-mode: 
+|   account_used: guest
+|   authentication_level: user
+|   challenge_response: supported
+|_  message_signing: disabled (dangerous, but default)
+| smb2-security-mode: 
+|   3:1:1: 
+|_    Message signing enabled but not required
+| smb2-time: 
+|   date: 2025-07-28T20:40:03
+|_  start_date: N/A
+| smb-os-discovery: 
+|   OS: Windows 6.1 (Samba 4.8.3)
+|   Computer name: localhost
+|   NetBIOS computer name: CENTOS\x00
+|   Domain name: \x00
+|   FQDN: localhost
+|_  System time: 2025-07-28T13:40:03-07:00
+|_nbstat: NetBIOS name: CENTOS, NetBIOS user: <unknown>, NetBIOS MAC: <unknown> (unknown)
+
+OS and Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
